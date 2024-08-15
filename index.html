@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AirForceOne-PoorEdition</h1>
+      <form id="booking">
+        <fieldset class="field-letenky">
+          <legend><h2>Letenky</h2></legend>
+          <!-- let -->
+          <div class="form-book">
+            <label for="">Mesto</label>
+            <select id="let">
+              <option value="500">Praha - 500 Kč</option>
+              <option value="3000">Frankfurt - 3000 Kč</option>
+              <option value="15000">New York - 15000 Kč</option>
+              <option value="30000">Sydney - 30000 Kč</option>
+            </select>
+          </div>
+
+          <!-- pocet osob -->
+          <div class="form-person">
+            <label for="person">Pocet osob:</label>
+            <select id="person">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <!-- zpatecni  -->
+
+          <div class="form-backFlight">
+            <input type="checkbox" id="backFlight" />
+            <label for="backFlight">Zpatecni let</label>
+          </div>
+
+          <!-- Tridy -->
+          <div class="form-class">
+            <label>Trida:<br /><br /></label>
+            <input type="radio" id="economy" name="class" value="0" checked />
+            <label for="economy">Economy</label><br />
+            <input type="radio" id="business" name="class" value="0.25" />
+            <label for="business">Business (+25%)</label><br />
+            <input type="radio" id="royal" name="class" value="0.50" />
+            <label for="royal">Royal (+50%)</label>
+          </div>
+        </fieldset>
+        <fieldset class="field-result">
+          <legend><h2>Kontrola</h2></legend>
+          <!-- Celkova cena -->
+          <button type="button" class="resultBtn">Spocitat cenu</button>
+          <div class="result" id="result">Celkova cena: 0 Kč</div>
+          <br /><br />
+          <!-- Pocet penez-->
+          <!-- <div class="form-money"> -->
+          <label for="amount">Kolik mate penez:</label>
+          <input type="number" id="amount" min="0" step="0.01" />
+          <button type="button" id="checkBtn">Zkontrolovat</button>
+          <!-- </div> -->
+        </fieldset>
+        <!-- poznamky-->
+        <fieldset class="field-notes">
+          <legend><h2>Poznamky</h2></legend>
+          <div class="form-notes">
+            <textarea
+              id="notes"
+              rows="10"
+              cols="40"
+              placeholder="poznamka"
+            ></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

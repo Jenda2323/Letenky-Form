@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "ConcertOne-Regular";
+
+  src: url(../fontss/ConcertOne-Regular.ttf) format(truetype);
+
+  font-weight: 200;
+
+  font-style: normal;
+}
+h1,
+h2 {
+  font-family: "ConcertOne-Regular";
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #25b6b1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f0f0;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.form-book,
+.form-person,
+.form-backFlight,
+.form-class,
+.form-money,
+.form-notes {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.form-class,
+.form-backFlight {
+  display: flex;
+  align-items: center;
+}
+
+.form-class input[type="radio"],
+.form-backFlight input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+select,
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0;
+}
+
+button {
+  background-color: #245dd1;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px 0;
+  transition: background-color 0.9s ease, transform 0.9s ease;
+}
+
+button:hover {
+  background-color: #22a958;
+  transform: 1s;
+  transform: scale(1.1);
+}
+
+button:focus {
+  outline: none;
+}
+
+.result {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #333;
+  margin-top: 20px;
+}
+.result.dostatecne {
+  color: #177a3f;
+}
+
+.result.nedostatecne {
+  color: #e74c3c;
+}
+#amount {
+  width: 30%;
+}
